@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/g2">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/libbookdataedittoolbar"
+        android:background="#9f000000"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/custompopup"
+        />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#c9ffffff"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_gravity="center"
+            android:paddingTop="40dp">
+
+
+            <EditText
+                android:id="@+id/updatebookname"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#000"
+                android:gravity="center"
+                android:hint="Book Name"
+                android:layout_marginTop="20dp"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:textColor="#fff"
+                android:textColorHint="#dbffffff"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/updatebookauther"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/updatebookname"
+                android:layout_marginTop="20dp"
+                android:background="#000"
+                android:gravity="center"
+                android:hint="Auther Name"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:textColor="#fff"
+                android:textColorHint="#dbffffff"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/updatebookdescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/updatebookauther"
+                android:layout_marginTop="20dp"
+                android:background="#000"
+                android:gravity="center"
+                android:hint="Description"
+                android:textColor="#fff"
+                android:textColorHint="#dbffffff"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/updatebookimage"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@+id/updatebookdescription"
+                android:background="#c6716d6d"
+                android:src="@drawable/camera2"
+                android:padding="5dp"
+                android:layout_marginTop="20dp" />
+
+            <ProgressBar
+                android:id="@+id/updatepbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/updatebookimage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/updatebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp"
+                android:background="#cc05d1c0"
+                android:text="Update"
+                android:textColor="#fff" />
+
+        </RelativeLayout>
+
+</LinearLayout>

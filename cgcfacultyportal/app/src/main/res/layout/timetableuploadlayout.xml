@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_margin="8dp"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timetable"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#0739df"
+        android:id="@+id/txt"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#000"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/txt"
+        android:id="@+id/newsfeedsep"
+        />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newsfeedsep"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="#86b256dd"
+        app:cardElevation="7dp"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="15dp"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#000"
+                    android:layout_margin="20dp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:id="@+id/tipmetableoptionsem"
+                    />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="#000"
+                    android:layout_margin="20dp"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:layout_below="@+id/tipmetableoptionsem"
+                    android:id="@+id/tipmetableoptionsec"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tipmetableoptionsec"
+                    android:id="@+id/imgtxthead"
+                    android:layout_centerHorizontal="true"
+                    android:text="select Image to upload"
+                    android:textSize="15dp"
+                    android:textColor="#fff"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/imgtxthead"
+                    android:id="@+id/timetableimageinput"
+                    android:src="@drawable/camerawide"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_margin="20dp"
+                    />
+
+                <ProgressBar
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:paddingTop="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/tbpbar"
+                    android:visibility="gone"
+                    android:layout_below="@+id/timetableimageinput"
+                    />
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/fileupload"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tbpbar"
+                    android:id="@+id/tbupbtn"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/close"
+        android:id="@+id/timetablepostdialogclose"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        />
+
+    </RelativeLayout>
+
+</RelativeLayout>

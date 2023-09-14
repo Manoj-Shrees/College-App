@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_aboutus"
+    android:layout_width="match_parent"
+    android:background="#817ace"
+    android:layout_height="match_parent">
+    <include
+        layout="@layout/toolbar">
+    </include>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Software Name :"
+            android:layout_marginTop="20dp"
+            android:id="@+id/softname"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/toolbar"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:text="' CGC Faculty Portal '"
+            android:textStyle="italic"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/softname"
+            />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version :"
+        android:layout_below="@+id/softname"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="70dp"
+        android:textStyle="bold"
+            android:textColor="#000"
+            android:id="@+id/version"
+        />
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 1.1  crona"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="80dp"
+            android:layout_below="@+id/softname"
+            android:textColor="#000000"
+            android:layout_toRightOf="@+id/version"
+            />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/version"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What is Dream Hunterz Technology ?"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginTop="30dp"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dream Hunterz Technology is a software company which has a vision of making better software tools for colleges, companies and other organisations so as to reduce human effort. "
+                android:layout_marginTop="20dp"
+                android:textStyle="italic"
+                android:textColor="#000000"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company Goals :"
+                android:textColor="#000"
+                android:layout_marginTop="40dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="The company was started with only one goal i.e. to make such effective and better software tools for colleges and other organisations. We hope that our goal automatically completes your answer."
+                android:textStyle="italic"
+                android:textColor="#000000"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Journey started as :"
+                android:textColor="#000"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="40dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="The people who started this organisation belong to the same college institute i.e Chandigarh Engineering College and started making tools with the brand name Dream Hunterz Technology for their college only at a starting level and so on the journey of this company was started.\n\n\n"
+               android:textStyle="italic"
+                android:textColor="#000000"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#bb000000"
+    android:padding="7dp"
+    android:layout_alignParentBottom="true"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Follow  us on  :"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textSize="14dp"
+        android:textColor="#ffffff"
+       android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="40dp"
+        >
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/facebookpage"
+            android:background="@drawable/facebook"
+            />
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/Instagrampage"
+            android:background="@drawable/instagram"
+            />
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/twitterpage"
+            android:background="@drawable/twitter"
+            />
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000"
+            >
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:indeterminate="true"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="#45c7ef"
+        android:id="@+id/loadingpdf"
+        />
+        </LinearLayout>
+<com.github.barteksc.pdfviewer.PDFView
+    android:id="@+id/loadpdf"
+    android:layout_below="@+id/loadingpdf"
+    android:scrollbarStyle="insideOverlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+</LinearLayout>

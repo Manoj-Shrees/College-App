@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/home"
+            android:checked="true"
+            android:icon="@drawable/menuhome"
+            android:title="Home"/>
+    <group
+        >
+        <item
+            android:id="@+id/menuacad"
+            android:title="Academics"
+            >
+
+            <menu
+                >
+                <item
+                    android:id="@+id/campusnewsfeed"
+                    android:icon="@drawable/menunewsfeed"
+                    android:title="Campus  Newsfeed"/>
+                <item
+                    android:id="@+id/Datesheet"
+                    android:icon="@drawable/menudatesheet"
+                    android:title="Datesheet"/>
+                <item
+                    android:id="@+id/Detainlist"
+                    android:icon="@drawable/menudetainlist"
+                    android:title="Detainlist"/>
+                <item
+                    android:id="@+id/Timetable"
+                    android:icon="@drawable/menutimetable"
+                    android:title="Timetable"/>
+                <item
+                    android:id="@+id/Syllabus"
+                    android:icon="@drawable/menusyllabus"
+                    android:title="Syllabus"/>
+                <item
+                    android:id="@+id/Library"
+                    android:icon="@drawable/menulibrary"
+                    android:title="Library"/>
+                <item
+                    android:id="@+id/Notes"
+                    android:icon="@drawable/sharenotesappicon"
+                    android:title="Notes"/>
+            </menu>
+        </item>
+    </group>
+<group>
+    <item android:title="Other"
+        android:id="@+id/menuother"
+        >
+    <menu>
+
+            <item
+                android:id="@+id/events"
+                android:icon="@drawable/menuevent"
+                android:title="Events"
+
+                />
+        <item
+            android:id="@+id/report"
+            android:icon="@drawable/menureport"
+            android:title="Report"
+
+            />
+
+        <item
+            android:id="@+id/Browser"
+            android:icon="@drawable/menubrowser"
+            android:title="Browser"></item>
+
+            <item
+                android:id="@+id/setting"
+                android:icon="@drawable/menusetting"
+                android:title="Settings"></item>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/menulogout"
+                android:title="Logout"/>
+
+    </menu>
+    </item>
+</group>
+</menu>
+

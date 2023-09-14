@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/g2">
+<android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/libdetailtoolbar"
+    android:background="#9f000000"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/custompopup"
+    />
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/libdeatlaillayout"
+            >
+
+        <ImageView
+            android:id="@+id/bookcover"
+            android:layout_width="110dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:padding="3dp"
+            android:layout_centerVertical="true"
+            />
+
+        <LinearLayout
+            android:id="@+id/deatilslayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/bookcover"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bookname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#6d000000"
+                android:gravity="center"
+                android:padding="3dp"
+                android:textColor="#fff"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/bookauther"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bookname"
+                android:layout_marginTop="10dp"
+                android:background="#6d000000"
+                android:gravity="center"
+                android:padding="3dp"
+                android:textColor="#fff"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/booktype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bookauther"
+                android:layout_marginTop="10dp"
+                android:background="#6d000000"
+                android:gravity="center"
+                android:padding="3dp"
+                android:textColor="#fff"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/bookowner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/libdeatlaillayout"
+            android:layout_margin="10dp"
+            android:background="#6d000000"
+            android:gravity="center"
+            android:padding="3dp"
+            android:textColor="#fff"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/bookuploaddate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bookowner"
+            android:layout_margin="7dp"
+            android:background="#6d000000"
+            android:gravity="center"
+            android:padding="3dp"
+            android:textColor="#fff"
+            android:textSize="15dp" />
+
+
+        <com.xiaochen.progressroundbutton.AnimDownloadProgressButton
+            android:id="@+id/dwnbtn"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            style="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:layout_below="@+id/bookuploaddate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:includeFontPadding="true"
+            android:padding="5dp"
+            app:progressbtn_backgroud_color="#e502ca66"
+            app:progressbtn_backgroud_second_color="#000"
+            app:progressbtn_enable_gradient="true"
+            app:progressbtn_enable_press="true" />
+        <TextView
+            android:id="@+id/bookdescrphead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dwnbtn"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Description :"
+            android:textColor="#000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bookdescrp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bookdescrphead"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#a5ff0000"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="#fff" />
+        <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Similar :"
+        android:layout_below="@+id/bookdescrp"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/desctxt"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/desctxt"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.CardView
+                android:layout_width="140dp"
+                android:layout_height="200dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@drawable/ca"
+                        />
+                    <TextView
+                        style="?android:attr/listSeparatorTextViewStyle"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="#000"
+                        android:layout_margin="10dp"
+                        android:layout_below="@+id/heading"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Computer Archietecture"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="- Auther"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="140dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="20dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@drawable/ca"
+                        />
+                    <TextView
+                        style="?android:attr/listSeparatorTextViewStyle"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="#000"
+                        android:layout_margin="10dp"
+                        android:layout_below="@+id/heading"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Computer Archietecture"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="- Auther"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="140dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="20dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@drawable/ca"
+                        />
+                    <TextView
+                        style="?android:attr/listSeparatorTextViewStyle"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="#000"
+                        android:layout_margin="10dp"
+                        android:layout_below="@+id/heading"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Computer Archietecture"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="- Auther"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="140dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="20dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@drawable/ca"
+                        />
+                    <TextView
+                        style="?android:attr/listSeparatorTextViewStyle"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="#000"
+                        android:layout_margin="10dp"
+                        android:layout_below="@+id/heading"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Computer Archietecture"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="- Auther"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="140dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@drawable/ca"
+                        />
+                    <TextView
+                        style="?android:attr/listSeparatorTextViewStyle"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="#000"
+                        android:layout_margin="10dp"
+                        android:layout_below="@+id/heading"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Computer Archietecture"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="- Auther"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </HorizontalScrollView>-->
+    </RelativeLayout>
+</ScrollView>
+
+</LinearLayout>

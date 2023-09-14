@@ -1,0 +1,207 @@
+<android.support.design.widget.CoordinatorLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                >
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                android:id="@+id/collapsetoolbar"
+                android:background="#df08dbf2"
+                >
+                <com.arlib.floatingsearchview.FloatingSearchView
+                    android:id="@+id/Searchbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="10dp"
+                    app:floatingSearch_actionMenuOverflowColor="#fff"
+                    app:floatingSearch_searchHint="Search Book"
+                    app:floatingSearch_searchSuggestionTextSize="15dp"
+                    app:floatingSearch_leftActionColor="#000"
+                    app:floatingSearch_suggestionsListAnimDuration="300"
+                    app:floatingSearch_showSearchKey="true"
+                    app:floatingSearch_showVoiceInput="true"
+                    app:floatingSearch_backgroundColor="#fff"
+                    app:floatingSearch_showMoveSuggestionUp="true"
+                    app:floatingSearch_dimBackground="true"
+                    app:floatingSearch_dismissOnOutsideTouch="true"
+                    app:floatingSearch_showOverFlowMenu="true"
+                    app:floatingSearch_leftActionMode="showSearch"
+                    app:floatingSearch_showMenuAction="true"
+                    app:floatingSearch_close_search_on_keyboard_dismiss="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                   <HorizontalScrollView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:scrollbars="none"
+                       android:layout_marginTop="100dp"
+                       android:layout_marginLeft="20dp"
+                       android:layout_marginRight="20dp"
+                       >
+                       <RadioGroup
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:orientation="horizontal"
+                           android:id="@+id/librg"
+                           >
+
+                           <RadioButton
+                               android:id="@+id/librb2"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="20dp"
+                               android:buttonTint="#fff"
+                               android:text="Engineering ( ME )" />
+
+                           <RadioButton
+                               android:id="@+id/librb3"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_marginLeft="20dp"
+                               android:buttonTint="#fff"
+                               android:text="Engineering ( ECE )" />
+
+                           <RadioButton
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:text="All"
+                               android:buttonTint="#fff"
+                               android:checked="true"
+                               android:id="@+id/librb1"
+                               />
+
+                           <RadioButton
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:buttonTint="#fff"
+                               android:text="Engineering ( CSE and IT )"
+                               android:layout_marginLeft="20dp"
+                               android:id="@+id/librb4"
+                               />
+
+                           <RadioButton
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:buttonTint="#fff"
+                               android:text="Pharmacy ( B.pharma )"
+                               android:layout_marginLeft="20dp"
+                               android:id="@+id/librb5"
+                               />
+                           <RadioButton
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:buttonTint="#fff"
+                               android:text="Pharmacy ( M.pharma )"
+                               android:layout_marginLeft="20dp"
+                               android:id="@+id/librb6"
+                               />
+                           <RadioButton
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:buttonTint="#fff"
+                               android:text="Hotel Management ( B.HMCT )"
+                               android:layout_marginLeft="20dp"
+                               android:id="@+id/librb7"
+                               />
+                           <RadioButton
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:buttonTint="#fff"
+                               android:text="Hotel Management ( B.ATHM )"
+                               android:layout_marginLeft="20dp"
+                               android:id="@+id/librb8"
+                               />
+                           <RadioButton
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:buttonTint="#fff"
+                               android:text="Biotechnology ( B.sc-BioTech )"
+                               android:layout_marginLeft="20dp"
+                               android:id="@+id/librb9"
+                               />
+                           <RadioButton
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:buttonTint="#fff"
+                               android:text="Biotechnology (M.sc-BioTech )"
+                               android:layout_marginLeft="20dp"
+                               android:id="@+id/librb10"
+                               />
+                           <RadioButton
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:buttonTint="#fff"
+                               android:text="Management ( BBA )"
+                               android:layout_marginLeft="20dp"
+                               android:id="@+id/librb11"
+                               />
+                           <RadioButton
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:buttonTint="#fff"
+                               android:text="Management ( MBA )"
+                               android:layout_marginLeft="20dp"
+                               android:id="@+id/librb12"
+                               />
+                           <RadioButton
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:buttonTint="#fff"
+                               android:text="Computer Application ( BCA )"
+                               android:layout_marginLeft="20dp"
+                               android:id="@+id/librb13"
+                               />
+                           <RadioButton
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:buttonTint="#fff"
+                               android:text="Computer Application ( MCA )"
+                               android:layout_marginLeft="20dp"
+                               android:id="@+id/librb14"
+                               />
+                           <RadioButton
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:buttonTint="#fff"
+                               android:text="Education ( B.ED )"
+                               android:layout_marginLeft="20dp"
+                               android:id="@+id/librb15"
+                               />
+                       </RadioGroup>
+                   </HorizontalScrollView>
+                </RelativeLayout>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+            </android.support.design.widget.AppBarLayout>
+         <FrameLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             app:layout_behavior="@string/appbar_scrolling_view_behavior"
+             android:id="@+id/libframe"
+             >
+         </FrameLayout>
+<android.support.design.widget.FloatingActionButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/upload"
+    app:layout_anchorGravity="bottom|center|right"
+    app:backgroundTint="#d2f9f8f8"
+    app:layout_anchor="@id/appBarLayout"
+    android:layout_marginRight="20dp"
+    app:borderWidth="2dp"
+    app:rippleColor="#000"
+    android:id="@+id/libuploadbtn"
+    />
+</android.support.design.widget.CoordinatorLayout>

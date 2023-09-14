@@ -1,0 +1,64 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:padding="20dp"
+    >
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/changepass"
+        android:background="@drawable/changepasspic"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Change\nPassword"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_below="@+id/changepass"
+        android:layout_marginTop="5dp"
+        android:id="@+id/text1"
+        />
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/changepropic"
+        android:id="@+id/updatepro"
+        android:layout_toRightOf="@+id/changepass"
+        android:layout_marginLeft="50dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Update\n Profile"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@+id/changepass"
+        android:layout_toRightOf="@+id/text1"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/text2"
+        />
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/deleteprodata"
+        android:id="@+id/deleteprodata"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete\nAccount"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_below="@+id/changepass"
+        android:layout_toRightOf="@+id/text2"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/textView2" />
+</RelativeLayout>

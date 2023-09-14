@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/g2"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/librefresh"
+        >
+<com.simplecityapps.recyclerview_fastscroll.views.FastScrollRecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/librecyclerview"
+    android:paddingTop="5dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:fastScrollPopupBgColor="#c608dbf2"
+    app:fastScrollPopupTextSize="20dp"
+    app:fastScrollTrackColor="#7f000000"
+    app:fastScrollThumbColor="#fff"
+    app:fastScrollAutoHide="true"
+    app:fastScrollAutoHideDelay="2500"
+    />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

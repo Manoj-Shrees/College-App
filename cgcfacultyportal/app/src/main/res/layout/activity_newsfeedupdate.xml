@@ -1,0 +1,26 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/g2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<android.support.v4.widget.SwipeRefreshLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/feedrefresh"
+    >
+   <android.support.v7.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/newsfeedlists"
+       android:layout_marginTop="10dp"
+       app:fastScrollPopupBgColor="#39dd91"
+       app:fastScrollPopupTextSize="20dp"
+       app:fastScrollTrackColor="#5d0f8e"
+       app:fastScrollThumbColor="#fff"
+       app:fastScrollAutoHide="true"
+       app:fastScrollAutoHideDelay="1500"
+       />
+</android.support.v4.widget.SwipeRefreshLayout>
+   </RelativeLayout>
+

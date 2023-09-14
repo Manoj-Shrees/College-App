@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frgtmainlayout"
+    >
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="#fff"
+    >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Enter a generated OTP code\nRecieved in your Email"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:textSize="20dp"
+    android:textColor="#000"
+    android:layout_marginTop="30dp"
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#c7080808"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:maxLength="6"
+        android:imeOptions="actionDone"
+        android:textColorHint="#fff"
+        android:textStyle="italic"
+        android:layout_gravity="center"
+        android:hint="OTP CODE"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:id="@+id/optinput"
+        />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/otpprogressbar"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+         android:layout_gravity="center"
+        android:layout_below="@+id/frgtpassinputemail"
+        android:background="#14cef5"
+        android:textColor="#ffffffff"
+        android:id="@+id/frgtsubotp"
+        />
+
+</LinearLayout>
+
+
+
+<ImageView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:src="@drawable/close"
+android:id="@+id/frgtotpdialogclosebtn"
+android:layout_alignParentTop="true"
+android:layout_alignParentRight="true"
+    />
+    </RelativeLayout>

@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "821480255178",
+    "firebase_url": "https://cgc-database.firebaseio.com",
+    "project_id": "cgc-database",
+    "storage_bucket": "cgc-database.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:821480255178:android:e8f64b6da51e1fd8",
+        "android_client_info": {
+          "package_name": "cgc.dreamhunterztech.cgcstudentapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "821480255178-nkl20bej5oo280a62mgu0glm29mg7k6m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAExN_hlCIPMZpfP0td5UuwfpMRMrt4oWk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:821480255178:android:733e19b6a05d22a9",
+        "android_client_info": {
+          "package_name": "cgc.dreamhunterztech.eventupdater"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "821480255178-nkl20bej5oo280a62mgu0glm29mg7k6m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAExN_hlCIPMZpfP0td5UuwfpMRMrt4oWk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:821480255178:android:b760d30a6d72ac76",
+        "android_client_info": {
+          "package_name": "com.dreamhunterztech.cgcstudentportal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "821480255178-nkl20bej5oo280a62mgu0glm29mg7k6m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAExN_hlCIPMZpfP0td5UuwfpMRMrt4oWk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:821480255178:android:cfc1687c659e698b",
+        "android_client_info": {
+          "package_name": "com.dreamhunterztech.cgcfacultyportal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "821480255178-nkl20bej5oo280a62mgu0glm29mg7k6m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAExN_hlCIPMZpfP0td5UuwfpMRMrt4oWk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

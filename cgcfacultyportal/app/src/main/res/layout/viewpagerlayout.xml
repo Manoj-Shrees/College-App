@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aa000000"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        >
+<android.support.design.widget.CollapsingToolbarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_scrollFlags="scroll|exitUntilCollapsed"
+    android:id="@+id/collapsetoolbar"
+    >
+        <ViewFlipper
+            android:id="@+id/flipper"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#a0000000"
+            android:inAnimation="@android:anim/slide_in_left"
+            android:outAnimation="@android:anim/slide_out_right"
+            android:flipInterval="2000"
+            android:autoStart="true"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/eventad1"
+                android:layout_gravity="center_horizontal"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/eventad2"
+                android:layout_gravity="center_horizontal"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/eventad3"
+                android:layout_gravity="center_horizontal"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/eventad4"
+                android:layout_gravity="center_horizontal"
+                />
+
+        </ViewFlipper>
+
+</android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            >
+        <android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tabs"
+            app:tabSelectedTextColor="#ffffff"
+            app:tabTextColor="#000000"
+            app:tabIndicatorColor="#f70505"
+            />
+        <android.support.v4.view.ViewPager
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:fillViewport="true"
+            android:layout_below="@+id/tabs"
+            android:id="@+id/pager"
+            />
+        </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

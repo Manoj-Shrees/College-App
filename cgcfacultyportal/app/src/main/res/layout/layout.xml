@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#1e65e9"
+    android:padding="10dp"
+   >
+
+    <io.github.yuweiguocn.lib.squareloading.SquareLoading
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#1e65e9"
+        app:squareColor="@android:color/white"
+        app:squareSize="15dp"
+        app:squareCorner="2dp"
+        app:dividerSize="4dp"
+        app:xCount="4"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        app:yCount="3"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Fetching Data from server"
+       android:layout_marginTop="7dp"
+        android:textColor="#d2ffffff"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:id="@+id/text"
+        />
+</RelativeLayout>

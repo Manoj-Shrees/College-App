@@ -1,0 +1,114 @@
+<android.support.v7.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="10dp"
+    android:layout_marginBottom="40dp"
+    android:id="@+id/newsfeedcardview"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="7dp"
+    android:background="#f2f1f1"
+    >
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="College Reopen"
+    android:textSize="25dp"
+    android:textColor="#000"
+    android:textStyle="bold"
+    android:id="@+id/newsfeedhead"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date :            "
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/feedsdate"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:id="@+id/feedstime"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/feedsdate"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Dear students on 11 july 2016 is the registration date for the next semester
+so, you all should be present on that day on your respective blocks ."
+        android:layout_marginTop="25dp"
+        android:background="#ade0ff"
+        android:textColor="#464545"
+        android:id="@+id/newsfeedcontext"
+        android:layout_below="@+id/newsfeedhead"
+        />
+    <TextView
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/newsfeedcontext"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"
+        android:id="@+id/sep"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="7dp"
+        android:gravity="center"
+        android:background="#cccccf"
+        android:layout_below="@+id/sep"
+        >
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/picicon"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/picopen" />
+
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/share1"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/newsfeedsharebutton"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=" - (H.O.D IT)\n    Shashi Bhushan"
+            android:textSize="15dp"
+            android:layout_marginLeft="30dp"
+
+            android:gravity="center"
+            android:id="@+id/newsfeedauther"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
+</android.support.v7.widget.CardView>

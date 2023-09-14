@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fefefd"
+        android:layout_margin="8dp"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID Verification"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="#5a80fc"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/libhead"
+            />
+        <TextView
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#000"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/libhead"
+            android:id="@+id/libsep"
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/libscroll"
+            android:layout_below="@+id/libsep"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fill the following Details and Upload Your Adhar card Photo and College ID Card (College ID cards / Library card / Hostel card) and The ID will be Reset with in 24 hrs."
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:id="@+id/libtxt3"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adhar card :"
+                    android:id="@+id/imgtxt1"
+                    android:layout_marginTop="50dp"
+                    android:textSize="20dp"
+                    android:layout_below="@+id/libtxt3"
+                    />
+
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/camera"
+                    android:layout_below="@id/libtxt3"
+                    android:id="@+id/adharcarduploadbtn"
+                    android:layout_toRightOf="@+id/imgtxt1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="70dp"
+                    android:scaleType="fitCenter"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="College id card:"
+                    android:id="@+id/imgtxt2"
+                    android:layout_marginTop="80dp"
+                    android:textSize="20dp"
+                    android:layout_below="@+id/imgtxt1"
+                    />
+
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/camera"
+                    android:layout_below="@id/imgtxt1"
+                    android:id="@+id/collegeidcarduploadbtn"
+                    android:layout_toRightOf="@+id/imgtxt2"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="40dp"
+                    android:scaleType="fitCenter"
+                    />
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:hint="University Roll No"
+                    android:gravity="center"
+                    android:layout_below="@+id/imgtxt2"
+                    android:id="@+id/getunirollno"
+                    android:inputType="number"
+                    android:layout_marginTop="50dp"
+                    android:background="#dfc6fa"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Email ID"
+                    android:gravity="center"
+                    android:inputType="textEmailAddress"
+                    android:layout_below="@+id/getunirollno"
+                    android:id="@+id/getemialid"
+                    android:layout_marginTop="20dp"
+                    android:background="#dfc6fa"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/getemialid"
+                    android:orientation="horizontal"
+                    android:id="@+id/spinnerlayout1"
+                    android:layout_marginTop="10dp"
+                    >
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/IDveriDept"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:foregroundGravity="center"
+                        android:backgroundTint="#dfc6fa"
+                        />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toRightOf="@+id/Dept"
+                        android:id="@+id/IDveribranch"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:foregroundGravity="center"
+                        android:backgroundTint="#dfc6fa"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spinnerlayout1"
+                    android:id="@+id/spinlay"
+                    android:orientation="horizontal"
+                    >
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/IDverisem"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="20dp"
+                        android:foregroundGravity="center"
+                        android:backgroundTint="#dfc6fa"/>
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:layout_toRightOf="@+id/sem"
+                        android:id="@+id/IDverisection"
+                        android:foregroundGravity="center"
+                        android:backgroundTint="#dfc6fa"
+                        ></Spinner>
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload"
+                    android:layout_below="@id/spinlay"
+                    android:layout_marginTop="40dp"
+                    android:background="#42d2e8"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:id="@+id/IDveriuploadbtn"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/close"
+        android:id="@+id/idverificdialogclose"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>

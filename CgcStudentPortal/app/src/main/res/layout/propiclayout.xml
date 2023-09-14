@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    >
+    <ProgressBar
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:id="@+id/uploadprogbar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/defaultuserprofile"
+        app:civ_border_color="#050505"
+        android:background="#0000"
+        app:civ_border_width="2dp"
+        android:id="@+id/userprofilepic"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

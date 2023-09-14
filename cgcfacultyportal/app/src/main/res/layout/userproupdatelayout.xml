@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="8dp"
+        android:background="#fefefd"
+        android:id="@+id/signuplayout"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile Deatils"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="#5a80fc"
+            android:gravity="center"
+            android:id="@+id/heading"
+            />
+        <TextView
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#000"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/heading"
+            android:id="@+id/prosettiungpsep"
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prosettiungpsep"
+            android:layout_marginTop="5dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:hint="Name"
+                    android:id="@+id/settingfirstname"
+                    android:background="#dfc6fa"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_marginRight="20dp"
+                    android:inputType="textCapCharacters"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:hint="Email ID"
+                    android:id="@+id/settingemailid"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#dfc6fa"
+                    android:layout_below="@+id/settingfirstname"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/layout5"
+                    android:layout_below="@+id/settingemailid"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender : "
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/settinggender"
+                        />
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_toRightOf="@+id/settinggender"
+                        android:layout_below="@+id/settingemailid"
+                        android:id="@+id/settingradiogroup"
+                        >
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Male"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="15dp"
+                            android:checked="true"
+                            android:id="@+id/settingmale"
+                            />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Female"
+                            android:textSize="15dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/settingfemale"
+                            />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout5"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/layout6"
+                    >
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:hint="Employee ID."
+                        android:textSize="15dp"
+                        android:inputType="number"
+                        android:background="#dfc6fa"
+                        android:gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:maxLength="8"
+                        android:layout_below="@+id/layout5"
+                        android:id="@+id/settinguniversityrollno"
+                        />
+                    <EditText
+                        android:layout_width="130dp"
+                        android:layout_height="30dp"
+                        android:inputType="number"
+                        android:background="#dfc6fa"
+                        android:textSize="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:hint="Mob No."
+                        android:maxLength="10"
+                        android:gravity="center"
+                        android:id="@+id/settingphoneno"
+                        android:layout_below="@+id/layout5"
+                        android:layout_toRightOf="@+id/settinguniversityrollno"
+                        />
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update"
+                    android:background="#14cef5"
+                    android:textColor="#ffffffff"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/layout6"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/settingupdatebutton"/>
+            </RelativeLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/close"
+        android:id="@+id/changeprodialogclose"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>
